@@ -18,7 +18,7 @@ jobs:
           yarn build
 
       - name: Upload a Build Artifact
-  uses: actions/upload-artifact@v3.1.2
-  with:
-    path: dist
+        uses: actions/upload-artifact@v3.1.2
+        with:
+          path: dist
     # The desired behavior if no files are found using the provided path.
