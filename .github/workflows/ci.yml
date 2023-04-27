@@ -17,8 +17,8 @@ jobs:
           yarn install
           yarn build
 
-      - name: Deploy 🚀                         # 第三步：部署
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          folder: dist                         # 部署的目录
-          branch: gh-pages                     # 部署到哪个分支
+      - name: Upload a Build Artifact
+  uses: actions/upload-artifact@v3.1.2
+  with:
+    path: dist
+    # The desired behavior if no files are found using the provided path.
